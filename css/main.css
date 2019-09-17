@@ -335,3 +335,29 @@ footer .social-links {
 ul#menu li:last-child a{
     color: red;
 }    
+
+/* Cambiando tamaño y posicionamiento de iconos */
+ul.social-links li a i{
+    font-size: 2em;
+    padding: 0 20px;
+    color: white;
+}
+
+.social-links {
+    margin-top: 0;
+}
+
+ul.social-links{
+    margin-bottom: -70px;
+}
+
+.big-hero .container p{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+i{
+    font-size: 4em;
+    color: #0AC693;
+    margin-bottom: 100px;
+}
