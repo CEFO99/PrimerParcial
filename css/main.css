@@ -330,3 +330,8 @@ footer .social-links {
     content: url(../images/isotipo.svg);
     transform: scale(.5);
 }
+
+/* Color de la opcion contacto */
+ul#menu li:last-child a{
+    color: red;
+}    
