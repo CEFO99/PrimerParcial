@@ -328,7 +328,13 @@ footer .social-links {
 /* Fix: Logo del header */
 .logo {
     content: url(../images/isotipo.svg);
-    transform: scale(.5);
+    transform: scale(.6 );
+}
+
+/* Posicionando header  */
+.header{
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Color de la opcion contacto */
@@ -361,3 +367,5 @@ i{
     color: #0AC693;
     margin-bottom: 100px;
 }
+
+/*  */
