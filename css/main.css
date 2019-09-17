@@ -324,3 +324,9 @@ footer .social-links {
         max-width: 1440px;
     }
 }
+
+/* Fix: Logo del header */
+.logo {
+    content: url(../images/isotipo.svg);
+    transform: scale(.5);
+}
