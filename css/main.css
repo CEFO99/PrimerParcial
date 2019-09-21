@@ -337,8 +337,8 @@ footer .social-links {
     justify-content: space-around;
 }
 
-/* Color de la opcion contacto */
-ul#menu li:last-child a{
+/* Hover menu */
+ul#menu li:hover a{
     color: red;
 }    
 
