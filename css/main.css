@@ -20,7 +20,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .src-only {
@@ -37,16 +37,34 @@ p{
     line-height: 25px;
 }
 
+/* Fix: Logo del header */
 .logo {
     width: 90px;
     margin: 1em;
+    content: url(../images/isotipo.svg);
+    transform: scale(.6 );
+}
+
+/* Cambiando tamaño y posicionamiento de iconos */
+.big-hero .container ul.social-links li a i{
+    padding: 0 20px;
+    color: white;
+}
+
+.big-hero .container p{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+i{
+    font-size: 4em;
+    margin-bottom: 40px;
 }
 
 .options {
     color: inherit;
     text-decoration: none;
     position: relative;
-    top: 30%;
     right: 95%;
     font-size: 1.5rem;
 
@@ -78,20 +96,21 @@ p{
 }
 
 /* Social links*/
+
 .social-links{
     list-style: none;
     padding: 0;
-    margin-top: 3em;
+    /* Delete margin top 3em */
     display: flex;
     flex-direction: row;
-    justify-content: center
-
+    justify-content: center;
 }
+
 
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 1.5em; /* font size 2.5 -> 1.5 */
 }
 
 
@@ -147,7 +166,7 @@ p{
 
 .post article p {
     color:#112935;
-    font-size: 0.75em;
+    font-size: 1em;
     padding: 1rem;
     line-height: 25px;
 }
@@ -155,7 +174,7 @@ p{
 /* About */
 
 .about{
-    margin-top: 2em;
+    margin: 2em 2em; /* margin left right 2em */
 }
 
 .about h2 {
@@ -229,8 +248,9 @@ footer{
     color:#D7DEE6;
 }
 
-footer .social-links {
-    margin: 0;
+footer .social-links li{
+    margin: 0 0 -40px; /* acortar margin de iconos*/
+    padding: 0 20px; /* espacio entre iconos */
 }
 
 .menu {
@@ -274,7 +294,6 @@ footer .social-links {
         color: red;
     }   
 
-
     /* Cambiando tamaño y posicionamiento de iconos */
     ul.social-links li a i{
         font-size: 2em;
@@ -284,25 +303,19 @@ footer .social-links {
 
     .social-links {
         margin-top: 0;
+        font-size: 3em; /* tamaño iconos tablet */
     }
 
     ul.social-links{
-        margin-bottom: -70px;
+        margin-bottom: -70px; /* acortar espacio*/
     }
 
-    .big-hero .container p{
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
+    /* fix propiedades icono flecha */
     i{
         font-size: 4em;
         color: #0AC693;
         margin-bottom: 100px;
     }
-
-
-
   
     .post ul {
         list-style: none;
@@ -317,7 +330,6 @@ footer .social-links {
         margin: 1rem 2rem;
         flex: 1 0 300px;
     }
-
 
     .logo {
         width: 150px;
@@ -344,6 +356,12 @@ footer .social-links {
 
     .about .container{
         margin: 0 20px 20px;
+    }
+
+    /* espacio iconos */
+    footer .social-links li{
+        margin: 0;
+        padding: 0 20px;
     }
 } 
 
@@ -378,7 +396,8 @@ footer .social-links {
     }
 
     ul.social-links{
-        margin-bottom: -70px;
+        margin-bottom: -70px; /* espacio abajo iconos */
+
     }
 
     .big-hero .container p{
@@ -386,6 +405,7 @@ footer .social-links {
         padding-bottom: 0;
     }
 
+    /* fix icono flecha */
     i{
         font-size: 4em;
         color: #0AC693;
@@ -412,7 +432,7 @@ footer .social-links {
         margin: -20px 90px 80px;
     }
 
-
+    /* utilizacion de grid */
     .about .container h2{
         grid-column: 1 / 5;
     }
@@ -437,9 +457,8 @@ footer .social-links {
 
 @media only screen and (min-width: 1440px) {
 
-    /*TODO: FALTA CSS */
     .container {
-        width: 90%;
+        width: 90%; /* 80% -> 90% */
         margin: 0 auto;
         max-width: 1440px;
     }
