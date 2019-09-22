@@ -428,8 +428,8 @@ footer .social-links li{
     .about .container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 100px;
-        margin: -20px 90px 80px;
+        grid-gap: 90px;
+        margin: -20px 40px 80px;
     }
 
     /* utilizacion de grid */
