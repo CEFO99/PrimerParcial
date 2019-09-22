@@ -439,8 +439,33 @@ footer .social-links {
 
     /*TODO: FALTA CSS */
     .container {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         max-width: 1440px;
     }
+
+    /* Posicionando header  */
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /* Hover menu */
+    ul#menu li:hover a{
+        color: red;
+    }    
+
+
+    /* Tamaño articulos y posicionamiento */
+    .green-area article{
+        width: 345px;
+        height: 400px;
+    }
+
+    .green-area .container.post ul li{
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
