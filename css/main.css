@@ -262,6 +262,47 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
+
+    /* Fix: Logo del header */
+    .logo {
+        content: url(../images/isotipo.svg);
+        transform: scale(.6 );
+    }
+
+    /* Hover menu */
+    ul#menu li:hover a{
+        color: red;
+    }   
+
+
+    /* Cambiando tamaño y posicionamiento de iconos */
+    ul.social-links li a i{
+        font-size: 2em;
+        padding: 0 20px;
+        color: white;
+    }
+
+    .social-links {
+        margin-top: 0;
+    }
+
+    ul.social-links{
+        margin-bottom: -70px;
+    }
+
+    .big-hero .container p{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    i{
+        font-size: 4em;
+        color: #0AC693;
+        margin-bottom: 100px;
+    }
+
+
+
   
     .post ul {
         list-style: none;
@@ -301,10 +342,9 @@ footer .social-links {
         margin-top: 1em;
     }
 
-
-
-
-    /*TODO: FALTA CSS */
+    .about .container{
+        margin: 0 20px 20px;
+    }
 } 
 
 @media only screen and (min-width: 1024px) {
